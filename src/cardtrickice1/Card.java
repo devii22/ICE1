@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*Student ID:-991659548
+
+*/
 package cardtrickice1;
 
 /** define card value and suits
  * 
  *
- * @author sivagamasrinivasan
+ * @author Isha Devi
  */
 public class Card 
 {
@@ -44,8 +47,16 @@ public class Card
     public void setSuits(String suits) {
         this.suits = suits;
     }
-   //number
     
+    public static int RandomValue()
+    {
+        return  (int) ((Math.random()*12)+1);
+    }
     //method for suits
-    
+       public static String RandomSuit()
+   {
+       int a = (int)(Math.random()*4);
+       return SUITS[a];
+   }
 }
+
